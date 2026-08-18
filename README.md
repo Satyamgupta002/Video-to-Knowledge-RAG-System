@@ -109,8 +109,8 @@ Users can:
 
 - Vector databases for large scale model
 - Web-based UI for Respective Client
-- Multi-disciplinary Course support 
-- Advanced reranking strategies  
+- Multi-disciplinary Course support
+- Retrieval quality improvements using similarity score thresholds
 
 ---
 
@@ -119,16 +119,13 @@ Users can:
 This project demonstrates **practical LLM engineering** using RAG to ground answers in real data.  
 It solves a real-world problem: **finding exact explanations inside hours of video content**.
 
-<<<<<<< HEAD
----
-=======
 ---
 
 ## 👨‍💻 Author
 
 **Satyam Gupta**
 
-B.Tech, Electronics & Communication Engineering
+B.Tech, Electronics & Communication Engineering<br>
 MANIT Bhopal
 
 ---
@@ -136,4 +133,3 @@ MANIT Bhopal
 ## ⭐ Show Your Support
 
 If you like this project, consider giving it a ⭐ on GitHub!
->>>>>>> 66d097ad432267bd4766c5ce58563d1a8797a50d
