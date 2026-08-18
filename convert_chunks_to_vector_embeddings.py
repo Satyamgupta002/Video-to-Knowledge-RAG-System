@@ -17,11 +17,11 @@ def create_embedding(text_list):
     embedding = r.json()["embeddings"]
     return embedding
 
-jsons = os.listdir("E:\DS CWH Practice\RAG Based Project\merged_jsons")
+jsons = os.listdir("E:\RAG Based AI Course Assistant\merged_jsons")
 my_dicts = [] #each and every chunk of all json files along with their embedding will come here
 chunk_id = 0
 for json_file in jsons:  # for every json file
-    with open(f"E:\DS CWH Practice\RAG Based Project\merged_jsons\{json_file}") as f:
+    with open(f"E:\RAG Based AI Course Assistant\merged_jsons\{json_file}") as f:
         content = json.load(f)
     print(f"Converting chunks to embeddings: {json_file}")
     embeddings = create_embedding([c['text'] for c in content['chunks']])
@@ -33,4 +33,4 @@ for json_file in jsons:  # for every json file
     
 df = pd.DataFrame.from_records(my_dicts)
 print(df.shape)
-joblib.dump(df, 'embeddings.joblib')
+joblib.dump(df, 'embeddings2.joblib')
