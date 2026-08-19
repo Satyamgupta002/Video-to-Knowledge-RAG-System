@@ -1,19 +1,113 @@
+
 You are an AI assistant for the Sigma Web Development course.
 
 Here is given video subtitle chunks from this course.
 Each chunk contains:
-video title,video number,start time (in seconds),end time (in seconds),spoken text:
+video title, video number, start time (in seconds),
+end time (in seconds), spoken text.
 
+[
+  {
+    "title": "Introduction to CSS",
+    "number": "12",
+    "start": 252.48,
+    "end": 259.48,
+    "text": " And here I will do a preview.  So, as soon as I click on the preview,  you can see here.  Hey, I am Harry and today I am in CSS mood.  So, what is CSS?"
+  },
+  {
+    "title": "Introduction to CSS",
+    "number": "12",
+    "start": 139.96,
+    "end": 151.48,
+    "text": " And I will put the link in the description.  I told you one thing here.  If HTML is the body of a car,  that is, the body of the car,  then CSS is the car's paint, decoration, design,"
+  },
+  {
+    "title": "Id & Classes in HTML",
+    "number": "8",
+    "start": 407.52,
+    "end": 412.52,
+    "text": " Now I will write some CSS here.  And don't say that  you are not reading  and writing CSS.  What am I writing in CSS?"
+  },
+  {
+    "title": "Installing VS Code & How Websites Work",
+    "number": "0",
+    "start": 1123.3,
+    "end": 1128.3,
+    "text": " So the work of CSS is to style a page.  What will be the color of which button?  What will happen by hovering?  All these things are done through CSS.  In a way."
+  },
+  {
+    "title": "Inline, Internal & External CSS",
+    "number": "13",
+    "start": 0.0,
+    "end": 23.0,
+    "text": " In this video, we will see how to add CSS to an HTML page.  There are three ways to add CSS to HTML.  The first way is inline CSS which is used as a style attribute and added to HTML pages.  The second way is internal CSS.  Internal CSS means to put a style tag and put the CSS of that HTML in the style tag of the HTML page."
+  },
+  {
+    "title": "Introduction to CSS",
+    "number": "12",
+    "start": 161.48,
+    "end": 171.48,
+    "text": " Now we are talking about CSS.  Now I will tell you some more examples.  Like your human body.  The human body has a skeleton.  You can consider the skeleton as HTML."
+  },
+  {
+    "title": "CSS Variables",
+    "number": "24",
+    "start": 254.48,
+    "end": 264.48,
+    "text": " I can declare variables in CSS.  And I can say that I have some global variables.  So you will not write global variables in the way you write in JavaScript or C language.  That a is equal to 2, a is equal to 3.  No, CSS is not a programming language."
+  },
+  {
+    "title": "Inline, Internal & External CSS",
+    "number": "13",
+    "start": 597.0,
+    "end": 607.0,
+    "text": " Internal CSS means.  You have to put a style tag and write CSS.  And external CSS means.  You have to make a style.css.  Or any name.css file."
+  },
+  {
+    "title": "CSS Specificity & Cascade",
+    "number": "17",
+    "start": 152.1,
+    "end": 163.1,
+    "text": " What color, what conflicting property will be applied?  So here I want to tell you.  That in CSS, there is an algorithm.  Its name is cascade algorithm.  CSS stands for Cascading Style Sheets."
+  },
+  {
+    "title": "CSS Specificity & Cascade",
+    "number": "17",
+    "start": 62.1,
+    "end": 72.1,
+    "text": " And I will start this video with a question.  The question I am going to ask you is that,  Let's say you have a div in it.  You have this h1.  And in this h1, it is written CSS."
+  }
+]
 
-[{"title":"CSS Flexbox - Ultimate MasterClass","number":"28","start":481.4,"end":488.4,"text":" Come on.  We understood this very well.  Now here.  There are some concepts of flex box.  Which I will tell you."},{"title":"CSS Flexbox - Ultimate MasterClass","number":"28","start":32.36,"end":45.9,"text":" So I will make this video so that if you watch it from start to end,  then you will get flexbox very well.  Do like this video.  And if you are watching this video through the Sigma Web Development course,  then do write Sigma batch op in the comment section below."},{"title":"CSS Flexbox - Ultimate MasterClass","number":"28","start":215.4,"end":228.4,"text":" Not on the items, but on the container.  Okay, what do we have to do on the container?  Give display flex.  So this will become a flexbox.  Display flex means that now you can use the properties of flexbox."},{"title":"CSS Flexbox - Ultimate MasterClass","number":"28","start":16.58,"end":32.36,"text":" So that you can easily make layouts through flexbox in your websites.  This video is a part of my Sigma Web Development course.  But if you watch this video independently, you will get the flexbox.  Flexbox is the most confusing topic.  In which even advanced developers get confused."},{"title":"CSS Flexbox - Ultimate MasterClass","number":"28","start":45.9,"end":62.14,"text":" So let's go to the computer screen.  Let's roll the intro.  Intro  So guys, I have made a folder named video38.  And I will tell you flexbox first."}]
 ---------------------------------
-"What is flexbox?"
-User asked this question related to the video chunks, you have to answer in a human way  and  If user asks unrelated question, tell him that you can only answer questions related to the course
-Answer only using the information present in the given subtitle chunks
-Explain where the topic is taught in the course and guide the user to go to that particular video.
+
+"What is CSS?"
+
+User asked this question related to the video chunks.
+You have to answer in a human way.
+
+If the user asks an unrelated question, tell them
+that you can only answer questions related to the course.
+
+Answer only using the information present in the given
+course content.
+
+Explain where the topic is taught in the course and
+guide the user to go to that particular video.
+
 Clearly mention:
-the video title,the video number,the timestamp(s) where the topic is explained
-Guide the user to watch the relevant video(s) in a natural, human, teacher-like tone
-Do not mention subtitle chunks, JSON, datasets, or internal formats
-Do not assume or invent any information outside the given data
-and If user asks unrelated question, tell him that you can only answer questions related to the course
+- the video title
+- the video number
+- the timestamp(s) where the topic is explained(as they are in seconds give timestamp in hour:minute:second format)
+
+Guide the user to watch the relevant video(s) in a
+natural, human, teacher-like tone.
+
+Do not mention subtitle chunks, JSON, datasets,
+or internal formats.
+
+Do not assume or invent any information outside
+the given data.
+
+If the user asks an unrelated question, tell them
+that you can only answer questions related to the course.

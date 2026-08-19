@@ -1,7 +1,9 @@
-I'd be happy to help you with your CSS Flexbox questions.
+Welcome to the Sigma Web Development course! I see you're interested in learning more about CSS.
 
-So, you want to know what flexbox is? Well, let me tell you, flexbox is a concept that can be a bit confusing, even for advanced developers. But don't worry, we're going to break it down in a way that's easy to understand.
+You asked, "What is CSS?"
 
-The topic of flexbox is covered in video 28 of the Sigma Web Development course. If you want to learn more about flexbox, I recommend watching video 28, which is titled "CSS Flexbox - Ultimate MasterClass". Specifically, the topic of flexbox is explained starting from timestamp 16.58 seconds to timestamp 32.36 seconds.
+The topic of CSS is introduced in the first video, titled "Introduction to CSS", and it's video number 12. You can find the relevant information starting from timestamp 161.48 seconds, where the instructor explains that CSS is like the car's paint, decoration, and design.
 
-In this video, we'll cover the basics of flexbox, including how to use it in your websites to create easy-to-make layouts. So, if you're interested in learning more about flexbox, make sure to watch video 28 in its entirety. I think you'll find it really helpful!
+In this video, the instructor, Harry, also explains that CSS is used to style a page, and it's used to determine the color of elements, like buttons, and what happens when you hover over them.
+
+If you want to learn more about CSS, I recommend watching video 12, titled "Introduction to CSS", starting from timestamp 161.48 seconds.
