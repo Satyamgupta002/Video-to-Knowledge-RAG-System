@@ -1,9 +1,7 @@
-Welcome! I see you're interested in learning more about adding styles to HTML files.
+I'd be happy to help you with your CSS Flexbox questions.
 
-To answer your question, "how to add style in html file?", let's look at where this topic is covered in our course. This topic is covered in video 13, titled "Inline, Internal & External CSS".
+So, you want to know what flexbox is? Well, let me tell you, flexbox is a concept that can be a bit confusing, even for advanced developers. But don't worry, we're going to break it down in a way that's easy to understand.
 
-In this video, we'll see how to add CSS to an HTML page using three different methods: inline CSS, internal CSS, and external CSS.
+The topic of flexbox is covered in video 28 of the Sigma Web Development course. If you want to learn more about flexbox, I recommend watching video 28, which is titled "CSS Flexbox - Ultimate MasterClass". Specifically, the topic of flexbox is explained starting from timestamp 16.58 seconds to timestamp 32.36 seconds.
 
-If you'd like to learn more about adding styles to your HTML file, I recommend checking out video 13. Specifically, pay attention to the timestamps around 44 seconds and 259-268 seconds, where we'll be discussing these different methods in detail.
-
-Would you like me to guide you to that specific video?
+In this video, we'll cover the basics of flexbox, including how to use it in your websites to create easy-to-make layouts. So, if you're interested in learning more about flexbox, make sure to watch video 28 in its entirety. I think you'll find it really helpful!

@@ -18,7 +18,7 @@ def create_embedding(text_list):
 def inference(prompt):
     r = requests.post("http://localhost:11434/api/generate", json={
         # "model": "deepseek-r1",
-        "model": "llama3.2",
+        "model": "llama3.2:3b",
         "prompt": prompt,
         "stream": False
     })
@@ -38,7 +38,7 @@ question_embedding = create_embedding([incoming_query])[0]
 # print(np.vstack(df['embedding']).shape)
 similarities = cosine_similarity(np.vstack(df['embedding']), [question_embedding]).flatten()
 # print(similarities)
-top_results = 5
+top_results = 10
 max_indx = similarities.argsort()[::-1][0:top_results]
 # print(max_indx)
 new_df = df.loc[max_indx] 
