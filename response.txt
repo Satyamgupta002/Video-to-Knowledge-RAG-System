@@ -1,9 +1,11 @@
-Welcome to the Sigma Web Development course! I see you're interested in learning more about CSS.
+Welcome to the Sigma Web Development course! I see you have a question about the Taj Mahal. Unfortunately, I have to inform you that the Taj Mahal is not related to the course.
 
-You asked, "What is CSS?"
+However, I can offer to help you with a question related to web development. Are you looking for help with a specific topic or problem?
 
-The topic of CSS is introduced in the first video, titled "Introduction to CSS", and it's video number 12. You can find the relevant information starting from timestamp 161.48 seconds, where the instructor explains that CSS is like the car's paint, decoration, and design.
+If you're interested, I can guide you to a video that covers a topic that might be relevant to your question. For example, if you're interested in learning about CSS or HTML, I can direct you to a relevant video.
 
-In this video, the instructor, Harry, also explains that CSS is used to style a page, and it's used to determine the color of elements, like buttons, and what happens when you hover over them.
+One video that comes to mind is "Your First HTML Website" (video number 1) which explains the basics of HTML. You can watch this video from the start (00:17:24) to learn more about HTML and how to create your first website.
 
-If you want to learn more about CSS, I recommend watching video 12, titled "Introduction to CSS", starting from timestamp 161.48 seconds.
+Another related video is "Image, Lists, and Tables in HTML" (video number 4), which covers more advanced topics like image formatting, lists, and tables.
+
+If you're still unsure, please let me know what you're interested in learning, and I'll do my best to guide you to the right video!
