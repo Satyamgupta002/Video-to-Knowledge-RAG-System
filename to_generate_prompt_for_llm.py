@@ -4,11 +4,8 @@ import requests
 
 from dotenv import load_dotenv
 from qdrant_client import QdrantClient
+from FlagEmbedding import FlagReranker
 
-
-# ============================================================
-# 1. Load environment variables
-# ============================================================
 
 load_dotenv()
 
@@ -19,69 +16,71 @@ if not QDRANT_URL:
     raise ValueError("QDRANT_URL is missing from .env")
 
 if not QDRANT_API_KEY:
-    raise ValueError("QDRANT_API_KEY is missing from .env")
+    raise ValueError("QDRANT_KEY is missing from .env")
 
-
-# ============================================================
-# 2. Connect to Qdrant Cloud
-# ============================================================
 
 client = QdrantClient(
     url=QDRANT_URL,
     api_key=QDRANT_API_KEY
 )
 
-COLLECTION_NAME = "sigma_web_d_course_chunks"
+COLLECTION_NAME = "sigma_course_chunks_v2"
+
+EMBEDDING_URL = "http://localhost:11434/api/embed"
+EMBEDDING_MODEL = "bge-m3"
+
+LLM_URL = "http://localhost:11434/api/generate"
+LLM_MODEL = "llama3.2:3b"
+
+RERANKER_MODEL = "BAAI/bge-reranker-v2-m3"
+
+CANDIDATE_COUNT = 20
+FINAL_CONTEXT_COUNT = 5
+
+reranker = FlagReranker(
+    RERANKER_MODEL,
+    use_fp16=False
+)
 
 
-# ============================================================
-# 3. Generate BGE-M3 embedding for the user's query
-# ============================================================
-
-def create_embedding(text_list):
-    r = requests.post(
-        "http://localhost:11434/api/embed",
+def create_embedding(text):
+    response = requests.post(
+        EMBEDDING_URL,
         json={
-            "model": "bge-m3",
-            "input": text_list
+            "model": EMBEDDING_MODEL,
+            "input": [text]
         },
         timeout=120
     )
 
-    r.raise_for_status()
+    response.raise_for_status()
 
-    embedding = r.json()["embeddings"]
-    return embedding
+    embeddings = response.json()["embeddings"]
 
+    if not embeddings:
+        raise RuntimeError("No embedding was returned by Ollama.")
 
-# ============================================================
-# 4. Generate answer using Llama 3.2 3B
-# ============================================================
+    return embeddings[0]
+
 
 def inference(prompt):
-    r = requests.post(
-        "http://localhost:11434/api/generate",
+    response = requests.post(
+        LLM_URL,
         json={
-            "model": "llama3.2:3b",
+            "model": LLM_MODEL,
             "prompt": prompt,
             "stream": False
         },
         timeout=300
     )
 
-    r.raise_for_status()
+    response.raise_for_status()
 
-    response = r.json()
-    return response
+    return response.json()
 
 
-# ============================================================
-# 5. Retrieve top-K chunks from Qdrant Cloud
-# ============================================================
-
-def retrieve_chunks(question, top_results=10):
-
-    question_embedding = create_embedding([question])[0]
+def retrieve_chunks(question, top_results=CANDIDATE_COUNT):
+    question_embedding = create_embedding(question)
 
     results = client.query_points(
         collection_name=COLLECTION_NAME,
@@ -95,54 +94,83 @@ def retrieve_chunks(question, top_results=10):
     for point in results.points:
         payload = point.payload or {}
 
-        retrieved_chunks.append({
-            "title": payload.get("title"),
-            "number": payload.get("number"),
-            "start": payload.get("start"),
-            "end": payload.get("end"),
-            "text": payload.get("text")
-        })
+        text = payload.get("text")
+
+        if not text:
+            continue
+
+        retrieved_chunks.append(
+            {
+                "title": payload.get("title"),
+                "number": payload.get("number"),
+                "start": payload.get("start"),
+                "end": payload.get("end"),
+                "text": text,
+                "qdrant_score": point.score
+            }
+        )
 
     return retrieved_chunks
 
 
-# ============================================================
-# 6. Ask the user for a question
-# ============================================================
+def rerank_chunks(question, chunks, top_n=FINAL_CONTEXT_COUNT):
+    if not chunks:
+        return []
+
+    pairs = [
+        [question, chunk["text"]]
+        for chunk in chunks
+    ]
+
+    scores = reranker.compute_score(
+        pairs,
+        normalize=True
+    )
+
+    if not isinstance(scores, list):
+        scores = [scores]
+
+    reranked_chunks = []
+
+    for chunk, score in zip(chunks, scores):
+        reranked_chunk = chunk.copy()
+        reranked_chunk["rerank_score"] = float(score)
+        reranked_chunks.append(reranked_chunk)
+
+    reranked_chunks.sort(
+        key=lambda item: item["rerank_score"],
+        reverse=True
+    )
+
+    return reranked_chunks[:top_n]
+
 
 incoming_query = input("Ask a Question: ")
 
-
-# ============================================================
-# 7. Retrieve relevant course chunks
-# ============================================================
-
 retrieved_chunks = retrieve_chunks(
     incoming_query,
-    top_results=10
+    top_results=CANDIDATE_COUNT
 )
 
 if not retrieved_chunks:
     print("No relevant course content was found.")
-    exit()
+    raise SystemExit
 
 
-# ============================================================
-# 8. Build context for the LLM
-# ============================================================
+reranked_chunks = rerank_chunks(
+    incoming_query,
+    retrieved_chunks,
+    top_n=FINAL_CONTEXT_COUNT
+)
 
 context = json.dumps(
-    retrieved_chunks,
+    reranked_chunks,
     ensure_ascii=False,
     indent=2
 )
 
 
-# ============================================================
-# 9. Build prompt
-# ============================================================
-
-prompt = f'''
+prompt = f"""
 You are an AI assistant for the Sigma Web Development course.
 
 Here is given video subtitle chunks from this course.
@@ -171,42 +199,31 @@ guide the user to go to that particular video.
 Clearly mention:
 - the video title
 - the video number
-- the timestamp(s) where the topic is explained(as they are in seconds give timestamp in hour:minute:second format)
+- the timestamp(s) where the topic is explained
+  (as they are in seconds give timestamp in HH:MM:SS format)
 
 Guide the user to watch the relevant video(s) in a
 natural, human, teacher-like tone.
 
 Do not mention subtitle chunks, JSON, datasets,
-or internal formats.
+reranking, Qdrant, embeddings, or internal formats.
 
 Do not assume or invent any information outside
 the given data.
 
 If the user asks an unrelated question, tell them
 that you can only answer questions related to the course.
-'''
+"""
 
-
-# ============================================================
-# 10. Save prompt for debugging
-# ============================================================
 
 with open("prompt.txt", "w", encoding="utf-8") as f:
     f.write(prompt)
 
 
-# ============================================================
-# 11. Generate final answer
-# ============================================================
-
 response = inference(prompt)["response"]
 
 print("\n" + response)
 
-
-# ============================================================
-# 12. Save response for debugging
-# ============================================================
 
 with open("response.txt", "w", encoding="utf-8") as f:
     f.write(response)

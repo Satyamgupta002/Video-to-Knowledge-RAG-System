@@ -1,0 +1,159 @@
+{
+    "chunks": [
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 0.0,
+            "end": 54.0,
+            "text": "We talked about selectors in CSS, in today's video we will look at selectors more closely and I will tell you some things about selectors which we will use in actual when we build websites. With high energy, do like this video and write Sigma Batch OP in the comment section below. Let's go to the computer screen, let's roll the intro. Intro So guys before I move forward in this video, I want to take you to the GitHub where I gave you the source code. And this time I will not ask you to access the source code, but I will show you what selectors we have already talked about. Here I have made a folder named video 35 and I am here CSS more on selectors and let's make it more on CSS selectors, it will be a little better."
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 40.7,
+            "end": 87.4,
+            "text": "Here I have made a folder named video 35 and I am here CSS more on selectors and let's make it more on CSS selectors, it will be a little better. Now I will tell you some more things about selectors which are important. So here I write style and let's start. So here I will write dev.boxes and after this I will write dev.box and here I will write a box. And let's say I want to replicate it and after that let's say I want to see how it will look like and I will open it in the browser. And it will look like this, if I want to select the first element, then I can select the first element by doing first child."
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 80.0,
+            "end": 118.6,
+            "text": "And it will look like this, if I want to select the first element, then I can select the first element by doing first child. So if I write dot boxes here and I write first child here, then I can select the first child here and make the background color red. I have to do dot box here, so basically what happens is that if the dot box is the first child of your parent, then the background color will be red. And if I had written boxes earlier, then what happened was that it was on the whole, because boxes are the first child of the body. So this is how you have to see it, many people get confused in this, but I hope you have understood this."
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 113.6,
+            "end": 154.6,
+            "text": "So this is how you have to see it, many people get confused in this, but I hope you have understood this. After this I will say that I can select the first letter of the dot box, in fact I can select its first line if it has a lot of text in it and I can say color it yellow. And for this I will comment this one and maybe I will have to put a big lorem here, lorem 455, I know it's a lot of text, now see the first line of this is yellow and the rest of the lines are of default black color, so I can also select the first line with CSS. And if I make it smaller, now see the first line that is being rendered in the device, it means that it does not mean anything else."
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 147.6,
+            "end": 180.6,
+            "text": "And if I make it smaller, now see the first line that is being rendered in the device, it means that it does not mean anything else. It's not like the first line is so many words or so many characters or let's say not so much width, the first line of your device, now see I have made its color yellow, it is not visible somewhere, but you got the point, I am trying to make its color black and see it changed to black, I will make it red, now see it is changing to red, if you can see it is changing to red, so you can select the first line in this way."
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 180.6,
+            "end": 222.6,
+            "text": "If I come back, then we talked about the element selector, we talked about the class selector, the ID selector was very simple, we talked about the child selector that if it is a direct child of P div, then it will be selected in this way, we talked about the descendant selector, if P is anywhere in the div, then these properties will be applied, then we have universal selector which selects everything, I want to show you one more thing related to universal selector, that is if I want to control z all the elements in the boxes, I will make the text a little smaller, I am first box and I will comment this out for now, and I will say that in the boxes,"
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 222.6,
+            "end": 267.6,
+            "text": "in the boxes, all the elements, what do you do, color it blue, so what will happen, dot box star means that it will be applied to all the elements in the boxes, and I say border 2 pixel solid black, do something like this, so you see here it will be applied, border 2 pixel solid black, so to select all the elements in the boxes, you can select it by starting dot box, if I talk about selectors, then I can say a lot of selectors, but I just want to teach you as much as is necessary, and to do this, I will choose only those selectors for you, which will be of maximum use when we make our real world websites,"
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 267.6,
+            "end": 325.6,
+            "text": "now I will tell you about an attribute selector, I told you in the course, but let's say I put here in div, let's say I put data color is equal to primary, now I want that where data color is primary, there is a margin top, so I can use attribute selector in this way, and I can say that if data color is equal to primary, then what you do, let's say margin top 45 pixels, and where data color is primary, there is a margin top, so if I see this, then see data color was primary, so margin top is applied here, and here border is also applied, so I have put margin and border, if I do padding, then it will be applied from inside, so you will see the border above, so margin top is applied in this element, because data color was primary,"
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 325.6,
+            "end": 360.6,
+            "text": "you can do this for any attribute, it is not necessary that you do it for data attributes, you can do it for even classes, you can do it for ID, you can do it for any attribute that is applied in the HTML element, now you can group, like if I want to put this thing in all paragraphs, all A's, all box classes, and put this thing in all data color primary, so I can do grouping in this way, so this is grouping of selector, and its effect will be like this, it will be applied in all, because I have selected all A's, all P's, so this is grouping of selectors, now I want to show you, I will comment this,"
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 360.6,
+            "end": 402.6,
+            "text": "I have written this in this way, I don't want you to be confused by its effect, I will write here that, the boxes, or I write on box, I say that nth child, and I say that if nth child is even, then make its background color blue, so if nth child is even, then make its background color blue, so this counting starts from 1, 1, 2, 3, 2 is even, so blue is applied here, 1 and 3 are odd, so you can do it like this, and you can write even or odd directly, this is also one thing that I want to tell you, see it is written odd, so this was our nth child selector, now what you can do, you can put a number in dot, box, nth child,"
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 402.6,
+            "end": 453.6,
+            "text": "1, 2, 3, 4, and nth last child, let's say I do 1, and then I write background color red, so you will see that the first one from below will be red, and if you do 2, then the second one from below will be red, and this means top from below, so this is the thing to top from below, people used to say that when we were in school, we used to top from below, so you can do this kind of work, and when you write nth here, you will see many other pseudo selectors, so you can explore them, and see here, as you will see arrow keys, it is written that, key properties experimental, do not use it, then represents an element that has an plus b minus 1 siblings, nth last child I have told you, and then some properties are experimental,"
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 453.6,
+            "end": 486.6,
+            "text": "because I want you to stay away from them, so these are the nth child properties that you can use, see I don't want to make the videos too bloated, in fact, nothing is useless, I will say that if you are a beginner and you are doing web development, then I am not discussing the properties that are relatively less useful for you, because I don't want the video to be bloated, I want to make a video of 10-20 minutes, in which I talk about the topic, instead of talking about everything, I don't want to make a documentation video, so I want to tell you about before and after,"
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 486.6,
+            "end": 533.6,
+            "text": "if I write boxes here and before, then you see after doing this, I can put content here, and I can say that Harry is good in content, so what is the point of putting content by doing this boxes before, now when I inspect it, I will do it here, and when I wrote boxes here, then see here, it has inserted a before element, that is, it has put an element before the main content of the boxes, and it has made its content, so in this way, the element can be dynamically inserted through CSS, and this is done with the help of before and after, it is a very important point, is it used? it is used a lot, I am saying it is used a lot,"
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 516.6,
+            "end": 551.6,
+            "text": "so in this way, the element can be dynamically inserted through CSS, and this is done with the help of before and after, it is a very important point, is it used? it is used a lot, I am saying it is used a lot, so before what will it do, it will insert before the main content, you put the content you want, what will it do after, I will show you after, if I had done this thing after, can both be used at once, yes, both can be done, and I will write after here, sigma course is also good,"
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 551.6,
+            "end": 592.6,
+            "text": "and if I do this and show you, then see here, Harry is good, sigma course is also good, I can also style it, I can make its color red, and its color blue, I can do all that, so I can do styling, I made it blue, and after it, I made it red, and here you will see that before will be inserted here, after will be inserted here, and here main content will be inserted, sometimes content has to be dynamically inserted, then before and after pseudo elements are used, they are called pseudo elements, not selectors, and you can write CSS in it, and I told you about the markers of the list, now I will tell you about the selection,"
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 592.6,
+            "end": 621.6,
+            "text": "so if I say something like this, dot boxes selection, that if someone has selected it, then let's say I want our color to be aqua, and I will not write it in conjunction with any element, I will write it like this, then it will work for the selection of all pages, now it will work, I will show you, so I will select, see the color has become aqua, selected text, I can also add background, I can say, make the background black, make the background color black, and make the color aqua, and you will select, you will see, it will be selected like this,"
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 622.6,
+            "end": 650.6,
+            "text": "so our selector will select, and apply style to selected elements, so you can do this thing, now I will tell you about the first letter, so if I want my dot box, and the color of the first letter, let's say it's color is, let me scroll up, let's say it's color is purple, or let's say it's color is peru,"
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 650.6,
+            "end": 679.6,
+            "text": "ok, by applying semicolon, I will show you, so the color of our first letter has become purple, ok, now you can do transform upper case, ok, like I told you earlier, but this way you can select the first letter, and obviously you can also increase its font size, like if I increase its font size to 45 pixels, which is ridiculously large font size, so it will look like this, ok, now I will tell you about an input element, so if I write here, like I have a form, I will write here, input type is equal to text,"
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 680.6,
+            "end": 709.6,
+            "text": "and let's say I write here, placeholder is equal to type your name here, ok, let's say I wrote this, now I can target the input, I can say that, I want to target its placeholder, and I want to make its placeholder color blue, ok, so I can make its placeholder color blue, I can change its placeholder size, I can do a lot of things inside its placeholder, ok, so let's say I want to increase its font size, I can say I want font size,"
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 709.6,
+            "end": 738.6,
+            "text": "56 pixels, which is ridiculously large font size, so see, it will overflow and it will look like this, ok, sometimes you need this kind of effect circle, so you can do it, so let's correct the input placeholder, what is this behavior of mine, that I am making it blue, let's show it well, let's start web development, so that it looks like there are some websites being made, ok, it's not just a demo, ok, I know that, I know that you are waiting for beautiful websites, they are going to come very soon, ok,"
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 738.6,
+            "end": 783.6,
+            "text": "so I hope this thing is clear to you, so these were some selectors, pseudo selectors and pseudo elements, which I wanted to tell you, and in my opinion, this is enough, if anything else is needed, then I will tell you, ok, whenever we will make projects, I will tell you, I just hope that everyone is enjoying, I will write something in the comment section below, that I am enjoying, and if you have not accessed it yet, then I have given the link in the description, so click here and bookmark it, click here and save it, and I am also putting the getup code, you will get all the getup code, and I hope everyone is enjoying, I don't know, that's it for this video, thank you so much for watching this video, and I will see you next time."
+        },
+        {
+            "number": "27",
+            "title": "More on CSS Selectors",
+            "start": 793.6,
+            "end": 803.6,
+            "text": "Thanks for watching."
+        }
+    ],
+    "text": " We talked about selectors in CSS, in today's video we will look at selectors more closely and I will tell you some things about selectors which we will use in actual when we build websites. With high energy, do like this video and write Sigma Batch OP in the comment section below. Let's go to the computer screen, let's roll the intro. Intro So guys before I move forward in this video, I want to take you to the GitHub where I gave you the source code. And this time I will not ask you to access the source code, but I will show you what selectors we have already talked about. Here I have made a folder named video 35 and I am here CSS more on selectors and let's make it more on CSS selectors, it will be a little better. Now I will tell you some more things about selectors which are important. So here I write style and let's start. So here I will write dev.boxes and after this I will write dev.box and here I will write a box. And let's say I want to replicate it and after that let's say I want to see how it will look like and I will open it in the browser. And it will look like this, if I want to select the first element, then I can select the first element by doing first child. So if I write dot boxes here and I write first child here, then I can select the first child here and make the background color red. I have to do dot box here, so basically what happens is that if the dot box is the first child of your parent, then the background color will be red. And if I had written boxes earlier, then what happened was that it was on the whole, because boxes are the first child of the body. So this is how you have to see it, many people get confused in this, but I hope you have understood this. After this I will say that I can select the first letter of the dot box, in fact I can select its first line if it has a lot of text in it and I can say color it yellow. And for this I will comment this one and maybe I will have to put a big lorem here, lorem 455, I know it's a lot of text, now see the first line of this is yellow and the rest of the lines are of default black color, so I can also select the first line with CSS. And if I make it smaller, now see the first line that is being rendered in the device, it means that it does not mean anything else. It's not like the first line is so many words or so many characters or let's say not so much width, the first line of your device, now see I have made its color yellow, it is not visible somewhere, but you got the point, I am trying to make its color black and see it changed to black, I will make it red, now see it is changing to red, if you can see it is changing to red, so you can select the first line in this way. If I come back, then we talked about the element selector, we talked about the class selector, the ID selector was very simple, we talked about the child selector that if it is a direct child of P div, then it will be selected in this way, we talked about the descendant selector, if P is anywhere in the div, then these properties will be applied, then we have universal selector which selects everything, I want to show you one more thing related to universal selector, that is if I want to control z all the elements in the boxes, I will make the text a little smaller, I am first box and I will comment this out for now, and I will say that in the boxes, in the boxes, all the elements, what do you do, color it blue, so what will happen, dot box star means that it will be applied to all the elements in the boxes, and I say border 2 pixel solid black, do something like this, so you see here it will be applied, border 2 pixel solid black, so to select all the elements in the boxes, you can select it by starting dot box, if I talk about selectors, then I can say a lot of selectors, but I just want to teach you as much as is necessary, and to do this, I will choose only those selectors for you, which will be of maximum use when we make our real world websites, now I will tell you about an attribute selector, I told you in the course, but let's say I put here in div, let's say I put data color is equal to primary, now I want that where data color is primary, there is a margin top, so I can use attribute selector in this way, and I can say that if data color is equal to primary, then what you do, let's say margin top 45 pixels, and where data color is primary, there is a margin top, so if I see this, then see data color was primary, so margin top is applied here, and here border is also applied, so I have put margin and border, if I do padding, then it will be applied from inside, so you will see the border above, so margin top is applied in this element, because data color was primary, you can do this for any attribute, it is not necessary that you do it for data attributes, you can do it for even classes, you can do it for ID, you can do it for any attribute that is applied in the HTML element, now you can group, like if I want to put this thing in all paragraphs, all A's, all box classes, and put this thing in all data color primary, so I can do grouping in this way, so this is grouping of selector, and its effect will be like this, it will be applied in all, because I have selected all A's, all P's, so this is grouping of selectors, now I want to show you, I will comment this, I have written this in this way, I don't want you to be confused by its effect, I will write here that, the boxes, or I write on box, I say that nth child, and I say that if nth child is even, then make its background color blue, so if nth child is even, then make its background color blue, so this counting starts from 1, 1, 2, 3, 2 is even, so blue is applied here, 1 and 3 are odd, so you can do it like this, and you can write even or odd directly, this is also one thing that I want to tell you, see it is written odd, so this was our nth child selector, now what you can do, you can put a number in dot, box, nth child, 1, 2, 3, 4, and nth last child, let's say I do 1, and then I write background color red, so you will see that the first one from below will be red, and if you do 2, then the second one from below will be red, and this means top from below, so this is the thing to top from below, people used to say that when we were in school, we used to top from below, so you can do this kind of work, and when you write nth here, you will see many other pseudo selectors, so you can explore them, and see here, as you will see arrow keys, it is written that, key properties experimental, do not use it, then represents an element that has an plus b minus 1 siblings, nth last child I have told you, and then some properties are experimental, because I want you to stay away from them, so these are the nth child properties that you can use, see I don't want to make the videos too bloated, in fact, nothing is useless, I will say that if you are a beginner and you are doing web development, then I am not discussing the properties that are relatively less useful for you, because I don't want the video to be bloated, I want to make a video of 10-20 minutes, in which I talk about the topic, instead of talking about everything, I don't want to make a documentation video, so I want to tell you about before and after, if I write boxes here and before, then you see after doing this, I can put content here, and I can say that Harry is good in content, so what is the point of putting content by doing this boxes before, now when I inspect it, I will do it here, and when I wrote boxes here, then see here, it has inserted a before element, that is, it has put an element before the main content of the boxes, and it has made its content, so in this way, the element can be dynamically inserted through CSS, and this is done with the help of before and after, it is a very important point, is it used? it is used a lot, I am saying it is used a lot, so before what will it do, it will insert before the main content, you put the content you want, what will it do after, I will show you after, if I had done this thing after, can both be used at once, yes, both can be done, and I will write after here, sigma course is also good, and if I do this and show you, then see here, Harry is good, sigma course is also good, I can also style it, I can make its color red, and its color blue, I can do all that, so I can do styling, I made it blue, and after it, I made it red, and here you will see that before will be inserted here, after will be inserted here, and here main content will be inserted, sometimes content has to be dynamically inserted, then before and after pseudo elements are used, they are called pseudo elements, not selectors, and you can write CSS in it, and I told you about the markers of the list, now I will tell you about the selection, so if I say something like this, dot boxes selection, that if someone has selected it, then let's say I want our color to be aqua, and I will not write it in conjunction with any element, I will write it like this, then it will work for the selection of all pages, now it will work, I will show you, so I will select, see the color has become aqua, selected text, I can also add background, I can say, make the background black, make the background color black, and make the color aqua, and you will select, you will see, it will be selected like this, so our selector will select, and apply style to selected elements, so you can do this thing, now I will tell you about the first letter, so if I want my dot box, and the color of the first letter, let's say it's color is, let me scroll up, let's say it's color is purple, or let's say it's color is peru, ok, by applying semicolon, I will show you, so the color of our first letter has become purple, ok, now you can do transform upper case, ok, like I told you earlier, but this way you can select the first letter, and obviously you can also increase its font size, like if I increase its font size to 45 pixels, which is ridiculously large font size, so it will look like this, ok, now I will tell you about an input element, so if I write here, like I have a form, I will write here, input type is equal to text, and let's say I write here, placeholder is equal to type your name here, ok, let's say I wrote this, now I can target the input, I can say that, I want to target its placeholder, and I want to make its placeholder color blue, ok, so I can make its placeholder color blue, I can change its placeholder size, I can do a lot of things inside its placeholder, ok, so let's say I want to increase its font size, I can say I want font size, 56 pixels, which is ridiculously large font size, so see, it will overflow and it will look like this, ok, sometimes you need this kind of effect circle, so you can do it, so let's correct the input placeholder, what is this behavior of mine, that I am making it blue, let's show it well, let's start web development, so that it looks like there are some websites being made, ok, it's not just a demo, ok, I know that, I know that you are waiting for beautiful websites, they are going to come very soon, ok, so I hope this thing is clear to you, so these were some selectors, pseudo selectors and pseudo elements, which I wanted to tell you, and in my opinion, this is enough, if anything else is needed, then I will tell you, ok, whenever we will make projects, I will tell you, I just hope that everyone is enjoying, I will write something in the comment section below, that I am enjoying, and if you have not accessed it yet, then I have given the link in the description, so click here and bookmark it, click here and save it, and I am also putting the getup code, you will get all the getup code, and I hope everyone is enjoying, I don't know, that's it for this video, thank you so much for watching this video, and I will see you next time. Thanks for watching."
+}

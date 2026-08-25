@@ -1,11 +1,13 @@
-Welcome to the Sigma Web Development course! I see you have a question about the Taj Mahal. Unfortunately, I have to inform you that the Taj Mahal is not related to the course.
+I'd be happy to help you with your questions about the Sigma Web Development course.
 
-However, I can offer to help you with a question related to web development. Are you looking for help with a specific topic or problem?
+You asked "why we use CSS Grids?"
 
-If you're interested, I can guide you to a video that covers a topic that might be relevant to your question. For example, if you're interested in learning about CSS or HTML, I can direct you to a relevant video.
+ CSS Grid is used to make layouts, which can be a bit confusing with floats and positioning. CSS Grid is one of the ways to create layouts in CSS, and it's especially useful when you want to place items in a grid-like structure.
 
-One video that comes to mind is "Your First HTML Website" (video number 1) which explains the basics of HTML. You can watch this video from the start (00:17:24) to learn more about HTML and how to create your first website.
+To learn more about CSS Grid and its usage, I recommend watching the video titled "CSS Grid - Ultimate MasterClass" (Video #29). 
 
-Another related video is "Image, Lists, and Tables in HTML" (video number 4), which covers more advanced topics like image formatting, lists, and tables.
+In this video, the speaker explains how to use CSS Grid to create a grid-like structure, and provides examples of how to apply CSS Grid to real-world scenarios. You can watch this video at timestamp 37:56 (HH:MM:SS) where the speaker starts explaining CSS Grid.
 
-If you're still unsure, please let me know what you're interested in learning, and I'll do my best to guide you to the right video!
+Additionally, the speaker also explains why they avoid using floats and clears, and how CSS Grid can be used as an alternative. You can find this information in the same video.
+
+I hope that helps!

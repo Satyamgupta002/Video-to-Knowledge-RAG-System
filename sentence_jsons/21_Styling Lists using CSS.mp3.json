@@ -1,0 +1,110 @@
+{
+    "chunks": [
+        {
+            "number": "21",
+            "title": "Styling Lists using CSS",
+            "start": 0.0,
+            "end": 57.040000000000006,
+            "text": "We read about different lists in HTML We saw that there are ordered list, unordered list, definition list There are list items in it If you are making a website, then in the navigation bar, for example You will have to put list items in an unordered list There you have to change a lot of things I will tell you in this video that on list item And along with that, what kind of CSS properties can be applied to their list and changed And now we are going to reach our first project by completing all these properties So write Sigma Batch OP in the comment section below Let's go to the computer screen Let's roll the intro Intro So guys I have come to my computer screen The first thing I will do is make a video 25 And here I will open with code by right-clicking"
+        },
+        {
+            "number": "21",
+            "title": "Styling Lists using CSS",
+            "start": 57.040000000000006,
+            "end": 111.34,
+            "text": "See people celebrate the century They celebrate 50 and a half century I will also celebrate the quarter century 25 videos have been done, write congratulations in the comment section Now here while making index.html I will tell you how to style a list List styling is so important If you want to make a new bar, then you will use list items 70-80% of the time Now here I will quickly toggle the word wrap And turn on the screencast mode so that you can see what I am doing And I will write CSS list here Suppose I want to make a new bar I start with a typical example which you will use After writing nav, I will say make an unordered list Make an ali, write home there And along with this make some more alias Suppose write about here and write contact here"
+        },
+        {
+            "number": "21",
+            "title": "Styling Lists using CSS",
+            "start": 111.34,
+            "end": 147.84,
+            "text": "So I wrote about here and wrote contact here Now first of all, you access this playlist Otherwise I will come to your house and I will snatch your computer and access it myself I will bookmark the playlist in your computer You will like it, you will not like it So you do it yourself Now here you can see that I have given you all the source code in github.com slash code with ari slash sigma web dev course You have to access this too Okay, if you do all these things yourself, I will like it Now here you see, I open it in the browser and show you And here you can see that it is rendered in this way Which is a default behavior Now you can do some styling inside the list Which has a big use"
+        },
+        {
+            "number": "21",
+            "title": "Styling Lists using CSS",
+            "start": 147.84,
+            "end": 193.84,
+            "text": "That you want to show it as a nav bar Now see whenever a list is made by default If I talk about this list, I will inspect it and show you And hide my face So that you can see below what I am pointing at Now see here its display property is a list item As we read about the display block We read about the display inline We read about the display flex and grid Its display value is a list item Which means that there will be a marker in it And there will be an item, okay Now if you want to change its display You can change it If I block its display Then its display will be blocked This is not a good approach to remove this marker If you want to remove its marker, then how will you do it"
+        },
+        {
+            "number": "21",
+            "title": "Styling Lists using CSS",
+            "start": 193.84,
+            "end": 204.84,
+            "text": "To remove its marker, see there is a marker in the li And the content inside it is that In the other li, there is a marker and this is it So how does it get it?"
+        },
+        {
+            "number": "21",
+            "title": "Styling Lists using CSS",
+            "start": 204.84,
+            "end": 251.84,
+            "text": "Its display is a list item That's why it is getting all this There are two things in it It comprises of a marker and list item Now there are some properties in it that we will talk about The most important property is list style If you make list style none Then you see here, this circle will disappear That is, the marker will disappear If you keep any value of list style Let's say any of these See how it is changing up See up, I will circle All these values can be used here Devnagri is also there If you do Devnagri, then 1, 2, 3, 4 will come You can also do Devnagri for list style But what we usually do Is target this Let's target this list item Let's say I write here style And I say inside nav, inside ul Li is there"
+        },
+        {
+            "number": "21",
+            "title": "Styling Lists using CSS",
+            "start": 251.84,
+            "end": 253.84,
+            "text": "What do you do about it?"
+        },
+        {
+            "number": "21",
+            "title": "Styling Lists using CSS",
+            "start": 253.84,
+            "end": 310.84,
+            "text": "Do list style List style See if I want to make a new bar Then what I will do is I will make list style none But I will just show you by doing Devnagri And as soon as I did Devnagri Devnagri I think Devnagri See Devnagri spelling is wrong And you see here as soon as I do Devnagri Devnagri D-E-V-A-N-A-G-R-I Devnagri Now see here 1, 2, 3 Which is You will get to see So this way you can change By changing the list style property Now you see here that its marker And the content is made by combining these two Now I show you one thing If I make its background Yellow Yellow Here I have made its background yellow So now see the marker is left Marker means it is outside the list item It is not inside the list item"
+        },
+        {
+            "number": "21",
+            "title": "Styling Lists using CSS",
+            "start": 310.84,
+            "end": 316.84,
+            "text": "But I want my marker Come inside the list item How will I do it? By using list style position"
+        },
+        {
+            "number": "21",
+            "title": "Styling Lists using CSS",
+            "start": 314.84,
+            "end": 356.84,
+            "text": "By using list style position So I will come here and I will say The list style position Inside Means take the marker inside And now my marker is inside Means any background will be put Border will be put I will show you by putting border I will show you by putting border Border 2px Solid Black And you see here as soon as I put 2px Solid black border Your markers are inside. Why? Because I have made list style position inside And whenever I will make list style position Inside it means My marker is inside my li Can I replace it with an image?"
+        },
+        {
+            "number": "21",
+            "title": "Styling Lists using CSS",
+            "start": 346.84,
+            "end": 380.84,
+            "text": "Because I have made list style position inside And whenever I will make list style position Inside it means My marker is inside my li Can I replace it with an image? Yes I can So I can use List style image property And here I can put an image url So url And here I can put an image url Let us say I An image url which is this I will show you If I want to use this So why it is not here?"
+        },
+        {
+            "number": "21",
+            "title": "Styling Lists using CSS",
+            "start": 380.84,
+            "end": 438.84,
+            "text": "Let me see Actually that image was not accessible So I used this image And you can see here This image is here I will show you one more thing I will comment this Obviously I can do here I can set list style type To an emoji And let us say I set monkey emoji And you can see monkey So if you want to put monkey And after this I want to tell you about a syntax You can list style type Let us say I want to make it a disk And after this I want to make position Inside And along with that I want to set image To this url I can do all three at once You can see here As soon as I did this And I will comment this So you can see here If I remove this url"
+        },
+        {
+            "number": "21",
+            "title": "Styling Lists using CSS",
+            "start": 438.84,
+            "end": 490.84,
+            "text": "Disk will come here And obviously if I remove disk Then url will come here So if I remove disk Then inside url will come here You can use disk or url at once So you should know this But for the syntax sake I will keep all three like this Either you will use both of them At once or both of them For obvious reasons Because either your image will be visible Or disk will be visible And you will understand list style image How to use short end property I will comment this And will keep it as disk In fact I like this monkey Or if I keep a smiley Or fire will be good So I can keep fire like this It looks pretty good So list is used a lot Like I told you to make navbar We usually do some work like this"
+        },
+        {
+            "number": "21",
+            "title": "Styling Lists using CSS",
+            "start": 490.84,
+            "end": 534.84,
+            "text": "I will show you All the things I have put on my li I will remove all this Usually what we do here We do none for list style In fact I will do this in li So that it will apply in all List style none Whenever you write anything here In element.style I will show you by closing this It will be added here as inline style You see here whatever I type Whatever I will add here Or remove from here Whatever will be written in element.style It will be added as inline CSS You should know this So I will not write here I will write here list style none And you can see by doing list style none It is gone. Then usually we"
+        },
+        {
+            "number": "21",
+            "title": "Styling Lists using CSS",
+            "start": 532.84,
+            "end": 590.84,
+            "text": "Then usually we Flex the display so that it becomes horizontal And we do it on its container We will not do it here but on ul So let's flex the display on its container So that all its items become flex And what we usually do on list item What we do is We set the padding So that's how our navbar Is made But that's not the point of this video In the coming videos we will make Great website ideas Don't take tension Access the playlist now Click here to bookmark Click here to save Thank you so much guys for watching this video And I will see you next time Music"
+        }
+    ],
+    "text": " We read about different lists in HTML We saw that there are ordered list, unordered list, definition list There are list items in it If you are making a website, then in the navigation bar, for example You will have to put list items in an unordered list There you have to change a lot of things I will tell you in this video that on list item And along with that, what kind of CSS properties can be applied to their list and changed And now we are going to reach our first project by completing all these properties So write Sigma Batch OP in the comment section below Let's go to the computer screen Let's roll the intro Intro So guys I have come to my computer screen The first thing I will do is make a video 25 And here I will open with code by right-clicking See people celebrate the century They celebrate 50 and a half century I will also celebrate the quarter century 25 videos have been done, write congratulations in the comment section Now here while making index.html I will tell you how to style a list List styling is so important If you want to make a new bar, then you will use list items 70-80% of the time Now here I will quickly toggle the word wrap And turn on the screencast mode so that you can see what I am doing And I will write CSS list here Suppose I want to make a new bar I start with a typical example which you will use After writing nav, I will say make an unordered list Make an ali, write home there And along with this make some more alias Suppose write about here and write contact here So I wrote about here and wrote contact here Now first of all, you access this playlist Otherwise I will come to your house and I will snatch your computer and access it myself I will bookmark the playlist in your computer You will like it, you will not like it So you do it yourself Now here you can see that I have given you all the source code in github.com slash code with ari slash sigma web dev course You have to access this too Okay, if you do all these things yourself, I will like it Now here you see, I open it in the browser and show you And here you can see that it is rendered in this way Which is a default behavior Now you can do some styling inside the list Which has a big use That you want to show it as a nav bar Now see whenever a list is made by default If I talk about this list, I will inspect it and show you And hide my face So that you can see below what I am pointing at Now see here its display property is a list item As we read about the display block We read about the display inline We read about the display flex and grid Its display value is a list item Which means that there will be a marker in it And there will be an item, okay Now if you want to change its display You can change it If I block its display Then its display will be blocked This is not a good approach to remove this marker If you want to remove its marker, then how will you do it To remove its marker, see there is a marker in the li And the content inside it is that In the other li, there is a marker and this is it So how does it get it? Its display is a list item That's why it is getting all this There are two things in it It comprises of a marker and list item Now there are some properties in it that we will talk about The most important property is list style If you make list style none Then you see here, this circle will disappear That is, the marker will disappear If you keep any value of list style Let's say any of these See how it is changing up See up, I will circle All these values can be used here Devnagri is also there If you do Devnagri, then 1, 2, 3, 4 will come You can also do Devnagri for list style But what we usually do Is target this Let's target this list item Let's say I write here style And I say inside nav, inside ul Li is there What do you do about it? Do list style List style See if I want to make a new bar Then what I will do is I will make list style none But I will just show you by doing Devnagri And as soon as I did Devnagri Devnagri I think Devnagri See Devnagri spelling is wrong And you see here as soon as I do Devnagri Devnagri D-E-V-A-N-A-G-R-I Devnagri Now see here 1, 2, 3 Which is You will get to see So this way you can change By changing the list style property Now you see here that its marker And the content is made by combining these two Now I show you one thing If I make its background Yellow Yellow Here I have made its background yellow So now see the marker is left Marker means it is outside the list item It is not inside the list item But I want my marker Come inside the list item How will I do it? By using list style position So I will come here and I will say The list style position Inside Means take the marker inside And now my marker is inside Means any background will be put Border will be put I will show you by putting border I will show you by putting border Border 2px Solid Black And you see here as soon as I put 2px Solid black border Your markers are inside. Why? Because I have made list style position inside And whenever I will make list style position Inside it means My marker is inside my li Can I replace it with an image? Yes I can So I can use List style image property And here I can put an image url So url And here I can put an image url Let us say I An image url which is this I will show you If I want to use this So why it is not here? Let me see Actually that image was not accessible So I used this image And you can see here This image is here I will show you one more thing I will comment this Obviously I can do here I can set list style type To an emoji And let us say I set monkey emoji And you can see monkey So if you want to put monkey And after this I want to tell you about a syntax You can list style type Let us say I want to make it a disk And after this I want to make position Inside And along with that I want to set image To this url I can do all three at once You can see here As soon as I did this And I will comment this So you can see here If I remove this url Disk will come here And obviously if I remove disk Then url will come here So if I remove disk Then inside url will come here You can use disk or url at once So you should know this But for the syntax sake I will keep all three like this Either you will use both of them At once or both of them For obvious reasons Because either your image will be visible Or disk will be visible And you will understand list style image How to use short end property I will comment this And will keep it as disk In fact I like this monkey Or if I keep a smiley Or fire will be good So I can keep fire like this It looks pretty good So list is used a lot Like I told you to make navbar We usually do some work like this I will show you All the things I have put on my li I will remove all this Usually what we do here We do none for list style In fact I will do this in li So that it will apply in all List style none Whenever you write anything here In element.style I will show you by closing this It will be added here as inline style You see here whatever I type Whatever I will add here Or remove from here Whatever will be written in element.style It will be added as inline CSS You should know this So I will not write here I will write here list style none And you can see by doing list style none It is gone. Then usually we Flex the display so that it becomes horizontal And we do it on its container We will not do it here but on ul So let's flex the display on its container So that all its items become flex And what we usually do on list item What we do is We set the padding So that's how our navbar Is made But that's not the point of this video In the coming videos we will make Great website ideas Don't take tension Access the playlist now Click here to bookmark Click here to save Thank you so much guys for watching this video And I will see you next time Music"
+}

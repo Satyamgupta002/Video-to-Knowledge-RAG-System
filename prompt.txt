@@ -8,80 +8,55 @@ end time (in seconds), spoken text.
 
 [
   {
-    "title": "Inline, Internal & External CSS",
-    "number": "13",
-    "start": 580.0,
-    "end": 589.0,
-    "text": " Or it is Quora.  Or it is Facebook or Instagram.  WhatsApp, web or anything.  In most of the cases.  In all these websites."
+    "title": "CSS Grid - Ultimate MasterClass",
+    "number": "29",
+    "start": 0.0,
+    "end": 39.06,
+    "text": "After watching this video, you will get the CSS Grid. This is not a claim, but a guarantee. Because in this video, I have explained CSS Grid to you in a very easy way. And the examples that I will use, you won't be able to forget CSS Grid even if you want to. CSS Grid is used to make layouts. This is one of the ways for you to make layouts in CSS. Because floats and positioning are very confusing. And there are some scenarios in which CSS Grid is directly applied. How to use it, what property is there, what is easy, what can seem difficult, but I will make it easy for you. Like this video and write Sigma Batchop in the comment section below. Let's go to the computer screen. Let's roll the intro.",
+    "qdrant_score": 0.69835496,
+    "rerank_score": 0.9934882785327074
   },
   {
-    "title": "CSS Transforms MasterClass",
-    "number": "30",
-    "start": 577.76,
-    "end": 587.76,
-    "text": " is there, then you can see from here.  I have not told you the transition yet.  I will tell you that. So you  wait for the transition.  Matrix transformation is this."
+    "title": "CSS Grid - Ultimate MasterClass",
+    "number": "29",
+    "start": 37.56,
+    "end": 91.8,
+    "text": "Let's roll the intro. So CSS Grid is used to make some layouts which resemble the actual grid. Let me explain. I will quickly open a VS Code here. And I will make an index.html here. And I have taken a boilerplate code here. Now I will make a container here. And I will make 5 items in it. And I will number them. 1, 2, 3, 4, 5. And I will preview it. And you can see 1, 2, 3, 4, 5 here. I will put some styles here. I will put some in containers. I will put some items. I will make it singular. I have put border 2px solid yellow in the container. And I will put border 2px solid red in the item. And I will hide 55px in the item. And I will make the width 55px.",
+    "qdrant_score": 0.68001205,
+    "rerank_score": 0.9832750613400636
   },
   {
-    "title": "CSS Transforms MasterClass",
-    "number": "30",
-    "start": 647.76,
-    "end": 657.76,
-    "text": " then access it now.  Either click here to bookmark it  or click here to save it.  Source code is being updated on GitHub.  Thank you so much guys for watching this video."
+    "title": "CSS Grid - Ultimate MasterClass",
+    "number": "29",
+    "start": 854.52,
+    "end": 883.52,
+    "text": "That if I show you item 4. So it is from first to T. And it is going to T. So it is going to T. So it is going to T. So it is going to T. So it is going to T. So it is going from first to third. And what happened for this. Because it is taking space. From first to third. If I remove its width. You will see. It is taking space from first to third. So the second item. It was pushed down. Okay. I hope you understood this grid. So this is a way. To place items in the grid. Okay. If you know only this. As far as I have told. So you can use CSS Grid. Okay. This name. All these are secondary things. You just do 120 pixels. Do 100 pixels.",
+    "qdrant_score": 0.5895323,
+    "rerank_score": 0.5692350522149068
   },
   {
-    "title": "CSS Variables",
-    "number": "24",
-    "start": 757.9200000000001,
-    "end": 767.9200000000001,
-    "text": " Click here to bookmark.  And click here to save.  I hope you have accessed the github code.  Which I have provided to you.  Are you enjoying it or not?"
+    "title": "CSS Float & Clear",
+    "number": "26",
+    "start": 516.72,
+    "end": 560.72,
+    "text": "And I will also tell you why I made this video. That I don't want to use it. Now you will say, what happened? Now some of you will hold your head. What is this? I mean, after telling so much, what is this? So this is that I avoid using float and clear. Yes, I am saying clear. I am not even saying do it sometimes. I am saying it very clearly. Neither use float nor clear. You should know these properties. So that no one asks you. You should know. Because it is a very simple thing. And if you see or maintain an old website. Someone has used float or some other property. So at least you should be so capable that you can maintain the website. So that's why float and clear are very important. For you to understand. But make modern layouts from CSS Grid.",
+    "qdrant_score": 0.6144801,
+    "rerank_score": 0.4459031215440444
   },
   {
-    "title": "CSS Object-fit and Object-cover",
-    "number": "33",
-    "start": 832.32,
-    "end": 838.96,
-    "text": " On github.  It is getting updated.  If you have not accessed the playlist.  Then click here.  Bookmark and save."
-  },
-  {
-    "title": "CSS Selectors MasterClass",
-    "number": "14",
-    "start": 556.5,
-    "end": 566.5,
-    "text": " I want the color to be  yellow.  As soon as I  visit it.  I want a visited"
-  },
-  {
-    "title": "Image, Lists, and Tables in HTML",
-    "number": "4",
-    "start": 435.64,
-    "end": 441.64,
-    "text": " In which name, destination,  and your favorite language is written.  What will come inside this row?  And what will come?  What will that be?"
-  },
-  {
-    "title": "Your First HTML Website",
-    "number": "1",
-    "start": 1574.24,
-    "end": 1579.24,
-    "text": " on Instagram  and if you  get a little  bit traction  where you"
-  },
-  {
-    "title": "Your First HTML Website",
-    "number": "1",
-    "start": 1181.12,
-    "end": 1186.12,
-    "text": " Let's take black titanium.  What is going on?  Let's take 256 GB.  Let's take no trade-in.  No Apple coverage."
-  },
-  {
-    "title": "CSS Sizing Units - px, rem, em, vh, vw, % & more",
-    "number": "18",
-    "start": 1552.22,
-    "end": 1562.22,
-    "text": " Click here to bookmark.  Click here to save.  Like the video.  Thank you so much for watching this video.  I will see you next time."
+    "title": "CSS Filters",
+    "number": "34",
+    "start": 409.98,
+    "end": 451.98,
+    "text": "can grid the display and bring all things in one cell and stack items on top of each other, I told you in the grid video, so if you want to do something like that, then you can use opacity so that the thing behind can also be seen ok, rest here there is no need to keep it, advanced I will say this is a concept of CSS, it is easy to use but its usage is a little advanced ok, I myself do not find myself using a lot of filters I am telling you my experience, in most of the websites, but yes sometimes the client says that I want this image like this, if you want that you do not have to go to photoshop or any editing software then you have built it in CSS and its rendering is also very good",
+    "qdrant_score": 0.5906966,
+    "rerank_score": 0.3055319816374992
   }
 ]
 
 ---------------------------------
 
-"Where is Taj Mahal Located?"
+"why we use css grids?"
 
 User asked this question related to the video chunks.
 You have to answer in a human way.
@@ -98,13 +73,14 @@ guide the user to go to that particular video.
 Clearly mention:
 - the video title
 - the video number
-- the timestamp(s) where the topic is explained(as they are in seconds give timestamp in hour:minute:second format)
+- the timestamp(s) where the topic is explained
+  (as they are in seconds give timestamp in HH:MM:SS format)
 
 Guide the user to watch the relevant video(s) in a
 natural, human, teacher-like tone.
 
 Do not mention subtitle chunks, JSON, datasets,
-or internal formats.
+reranking, Qdrant, embeddings, or internal formats.
 
 Do not assume or invent any information outside
 the given data.
